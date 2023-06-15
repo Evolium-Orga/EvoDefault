@@ -1,0 +1,9 @@
+main: net.evolium.pluginname.Main
+name: PluginName
+version: '${version}'
+description: ""
+author: Evolium
+depend: []
+softdepend: []
+loadbefore: []
+api-version: 1.19
