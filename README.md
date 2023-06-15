@@ -1,4 +1,4 @@
-# Plugin BaseTemplate
+# EvoDefault
 
 Le plugin BaseTemplate sert de point de départ pour développer des plugins Bukkit en Java. Il fournit une structure de modèle de base et des composants essentiels pour vous aider à démarrer rapidement.
 
