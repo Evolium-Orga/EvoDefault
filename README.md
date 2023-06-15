@@ -1,43 +1,41 @@
-# BaseTemplate Plugin
+# Plugin BaseTemplate
 
-The BaseTemplate plugin serves as a starting point for developing Bukkit plugins in Java. It provides a basic template structure and essential components to help you get started quickly.
+Le plugin BaseTemplate sert de point de départ pour développer des plugins Bukkit en Java. Il fournit une structure de modèle de base et des composants essentiels pour vous aider à démarrer rapidement.
 
-## Getting Started
+## Pour commencer
 
-To utilize HysummitPluginTemplate plugin, follow these steps:
+Pour utiliser le plugin HysummitPluginTemplate, suivez ces étapes :
 
-1. Clone the repository or download the source code to your local machine.
-2. Set up your development environment with the required dependencies and libraries.
-3. Import the project into your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse). We recommend the use of IntelliJ IDEA!
-4. Update plugin name references in files
-   1. settings.gradle
-   2. build.gradle.kts
-   3. plugin.yml
-5. Customize the plugin according to your specific requirements. Make changes to the provided code or add your own classes to extend the functionality.
-6. Once finished setting up, replace this file's contents with the contents from "README-plugin.md" and delete the latter. 
+Clonez le dépôt ou téléchargez le code source sur votre machine locale.
+Configurez votre environnement de développement avec les dépendances et les bibliothèques requises.
+Importez le projet dans votre IDE Java préféré (par exemple, IntelliJ IDEA, Eclipse). Nous recommandons l'utilisation d'IntelliJ IDEA !
+Mettez à jour les références du nom du plugin dans les fichiers suivants :
+settings.gradle
+build.gradle.kts
+plugin.yml
+Personnalisez le plugin en fonction de vos besoins spécifiques. Apportez des modifications au code fourni ou ajoutez vos propres classes pour étendre les fonctionnalités.
+Une fois la configuration terminée, remplacez le contenu de ce fichier par le contenu de "README-plugin.md" et supprimez ce dernier.
 
-## Coding Rules
+## Règles de codage
 
-When working on the BaseTemplate plugin, please adhere to the following coding rules and conventions:
+Lorsque vous travaillez sur le plugin BaseTemplate, veuillez respecter les règles et les conventions de codage suivantes :
 
-1. **Package Naming**: Packages should be named in lowercase with words separated by periods. For example: `net.hysummit.rtp.playermanager`.
-2. **Class Naming**: Class names should follow PascalCase (UpperCamelCase), starting with an uppercase letter. For example: `BaseTemplate`, `ExampleExecutor`, `JoinManager`.
-3. **Variable Naming**: Variables should use camelCase starting with a lowercase letter. For example: `logger`, `formator`, `pm`.
-4. **Constant Naming**: Constants should be in uppercase with words separated by underscores. For example: `WELCOME_MESSAGE`, `DEBUG_MODE`.
-5. **Indentation and Formatting**: Use consistent indentation (spaces rather than tabs) for improved code readability. Follow consistent formatting rules, such as placing opening braces on the same line as the corresponding method or class declaration.
-6. **Comments**: Include comments to explain the purpose and functionality of classes, methods, and important code sections. Comments should be clear, concise, and provide useful information.
-7. **Error Handling**: Implement proper error handling using try-catch blocks or propagating exceptions to the appropriate level.
-8. **Use of Final and Static**: Utilize the `final` keyword for constant variables and the `static` keyword for class-level variables and methods when appropriate.
-9. **Code Organization**: Group related code together! Only the main class should be at the root of the plugin. Use appropriate access modifiers (`public`, `private`) to control visibility and accessibility of class members.
-10. **Naming Convention for Methods**: Method names should use camelCase and be descriptive of their purpose. For example: `onEnable`, `onDisable`, `setCommands`, `loadConfigFiles`.
+**Nom des packages** : Les packages doivent être nommés en minuscules avec des mots séparés par des points. Par exemple : net.hysummit.rtp.playermanager.
+**Nom des classes** : Les noms de classe doivent suivre la notation PascalCase (UpperCamelCase), en commençant par une lettre majuscule. Par exemple : BaseTemplate, ExampleExecutor, JoinManager.
+**Nom des variables** : Les variables doivent utiliser la notation camelCase en commençant par une lettre minuscule. Par exemple : logger, formator, pm.
+**Nom des constantes** : Les constantes doivent être en majuscules avec des mots séparés par des underscores. Par exemple : WELCOME_MESSAGE, DEBUG_MODE.
+**Indentation et formatage** : Utilisez une indentation cohérente (espaces plutôt que des tabulations) pour améliorer la lisibilité du code. Respectez des règles de formatage cohérentes, telles que placer les accolades ouvrantes sur la même ligne que la déclaration de méthode ou de classe correspondante.
+**Commentaires** : Incluez des commentaires pour expliquer le but et la fonctionnalité des classes, des méthodes et des sections de code importantes. Les commentaires doivent être clairs, concis et fournir des informations utiles.
+**Gestion des erreurs** : Mettez en place une gestion appropriée des erreurs en utilisant des blocs try-catch ou en propageant les exceptions au niveau approprié.
+Utilisation de final et static : Utilisez le mot-clé final pour les variables constantes et le mot-clé static pour les variables et les méthodes de niveau de classe, lorsque cela est approprié.
+**Organisation du code** : Regroupez le code connexe ensemble ! Seule la classe principale devrait être à la racine du plugin. Utilisez les modificateurs d'accès appropriés (public, private) pour contrôler la visibilité et l'accessibilité des membres de classe.
+**Convention de nommage des méthodes** : Les noms de méthodes doivent utiliser la notation camelCase et être descriptifs de leur objectif. Par exemple : onEnable, onDisable, setCommands, loadConfigFiles.
+Veuillez garder ces règles de codage à l'esprit lorsque vous travaillez sur votre plugin pour maintenir la cohérence et la lisibilité du code.
 
-Please keep these coding rules in mind while working on your plugin to maintain code consistency and readability.
+## Problème connu
 
-## Known Issue
+Si vous rencontrez une erreur lors du chargement du projet Gradle indiquant "Unsupported class file major version 64" et si définir votre JDK de projet sur 17 ne résout pas ce problème, cela signifie probablement que vos paramètres Gradle tentent d'utiliser Java 20. Vous pouvez résoudre ce problème en cliquant sur Gradle -> la petite roue dentée -> Paramètres Gradle et en définissant "Gradle JVM" sur 17.
 
-If when you try to load the gradle project you get this error `Unsupported class file major version 64` and if setting your project sdk to 17 doesn't fix this issue then it probably mean that your Gradle settings are trying to use Java 20. You can solve it by clicking on Gradle -> the little cogwheel -> Gradle Settings and setting Gradle JVM to 17.
+##Contribution
 
-
-## Contributing
-
-If you find any issues, have suggestions, or would like to contribute to the project, feel free to open an issue or submit a pull request. Your contributions are greatly appreciated!
+Si vous rencontrez des problèmes, avez des suggestions ou souhaitez contribuer au projet, n'hésitez pas à ouvrir une demande ou à soumettre une demande de modification. Vos contributions sont grandement appréciées !
