@@ -23,18 +23,6 @@ repositories {
 
 dependencies {
     implementation("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
-
-    compileOnly("org.jetbrains:annotations:24.0.1")
-
-    compileOnly("org.projectlombok:lombok:1.18.26")
-    annotationProcessor("org.projectlombok:lombok:1.18.26")
-
-    testCompileOnly("org.projectlombok:lombok:1.18.26")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.26")
-
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation("org.mockito:mockito-junit-jupiter:5.3.1")
 }
 
 tasks.shadowJar {
