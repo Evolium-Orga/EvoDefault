@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT")
+    implementation("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
 
     compileOnly("org.jetbrains:annotations:24.0.1")
 
