@@ -4,7 +4,7 @@ Le plugin BaseTemplate sert de point de départ pour développer des plugins Buk
 
 ## Pour commencer
 
-Pour utiliser le plugin HysummitPluginTemplate, suivez ces étapes :
+Pour utiliser le plugin EvoDefault, suivez ces étapes :
 
 Clonez le dépôt ou téléchargez le code source sur votre machine locale.
 Configurez votre environnement de développement avec les dépendances et les bibliothèques requises.
@@ -18,9 +18,9 @@ Une fois la configuration terminée, remplacez le contenu de ce fichier par le c
 
 ## Règles de codage
 
-Lorsque vous travaillez sur le plugin BaseTemplate, veuillez respecter les règles et les conventions de codage suivantes :
+Lorsque vous travaillezavec EvoDefault, veuillez respecter les règles et les conventions de codage suivantes :
 
-**Nom des packages** : Les packages doivent être nommés en minuscules avec des mots séparés par des points. Par exemple : net.hysummit.rtp.playermanager.
+**Nom des packages** : Les packages doivent être nommés en minuscules avec des mots séparés par des points. Par exemple : fr.evolium.evodefault
 
 **Nom des classes** : Les noms de classe doivent suivre la notation PascalCase (UpperCamelCase), en commençant par une lettre majuscule. Par exemple : BaseTemplate, ExampleExecutor, JoinManager.
 
